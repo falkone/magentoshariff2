@@ -1,10 +1,9 @@
 <?php
 namespace Falkone\MagentoShariff\Block;
 
-class MagentoShariff extends \Magento\Framework\View\Element\Template
+class MagentoShariff extends \Magento\Catalog\Block\Product\View\AbstractView
 {
-    public function _prepareLayout()
-    {
-        return parent::_prepareLayout();
+    public function getProductName() {
+        return $this->getProduct()->getName();
     }
 }

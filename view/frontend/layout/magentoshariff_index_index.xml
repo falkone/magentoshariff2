@@ -1,6 +1,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="Falkone_MagentoShariff::css/shariff.css"/>
+        <css src="Falkone_MagentoShariff::fonts/awesome/font-awesome.css"/>
         <link src="Falkone_MagentoShariff::js/shariff.js"/>
     </head>
     <body>

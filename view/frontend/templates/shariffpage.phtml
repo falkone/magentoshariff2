@@ -1,12 +1,29 @@
-<p>
-    <?php echo __('Hello World') ?>!
-</p>
-
-<h1>My article</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<h1>Demonstration: Shariff</h1>
 
 <h2>Minimum buttons:</h2>
 <div class="shariff"></div>
 
 <h2>More advanced buttons:</h2>
-<div class="shariff" data-backend-url="/path/to/backend" data-url="http://www.example.com/my-article.html" data-theme="grey" data-orientation="vertical"></div>
+<div class="shariff" data-backend-url="/my-shariff/backend" data-url="http://www.heise.de" data-theme="grey" ></div>
+
+<h2>More advanced buttons:</h2>
+<div class="shariff" data-backend-url="/my-shariff/backend" data-url="http://www.heise.de" data-theme="standard" ></div>
+
+<h2>More advanced buttons:</h2>
+<div class="shariff" data-backend-url="/my-shariff/backend" data-url="http://www.heise.de" data-theme="white" ></div>
+
+<script>
+    var createDiv = function() {
+        var div = document.createElement("div");
+        div.classList.add("shariff");
+        document.querySelector("body").appendChild(div);
+        return div;
+    }
+    new Shariff(createDiv());
+    // Set custom options in constructor
+    new Shariff(createDiv(), {
+        theme: "grey",
+        services: ["twitter", "googleplus"],
+        infoUrl: "http://www.example.com"
+    });
+</script>

@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Falkone_MagentoShariff::shariff.complete.css"/>
+        <link src="Falkone_MagentoShariff::shariff.complete.js"/>
+        <css src="Falkone_MagentoShariff::css/shariff.complete.css"/>
+        <link src="Falkone_MagentoShariff::js/shariff.complete.js"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="shariff-page" template="Falkone_MagentoShariff::shariffpage.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

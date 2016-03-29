@@ -3,7 +3,7 @@ namespace Falkone\MagentoShariff\Controller\Index;
 
 use \Magento\Framework\App\Action\Action;
 
-class Index extends Action
+class Demo extends Action
 {
     /** @var  \Magento\Framework\View\Result\Page */
     protected $resultPageFactory;

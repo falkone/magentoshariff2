@@ -1,0 +1,27 @@
+<h1>Demonstration: Shariff</h1>
+
+<h2>Minimum buttons:</h2>
+<div class="shariff"></div>
+
+<h2>More advanced buttons:</h2>
+<div class="shariff" data-backend-url="/magentoshariff/backend" data-url="http://www.heise.de" data-theme="grey" ></div>
+
+<h2>More advanced buttons:</h2>
+<div class="shariff" data-backend-url="/magentoshariff/backend" data-url="http://www.heise.de" data-theme="standard" ></div>
+
+<h2>More advanced buttons:</h2>
+<div class="shariff" data-backend-url="/magentoshariff/backend" data-url="http://www.heise.de" data-theme="white" ></div>
+
+<script type="text/javascript">
+    requirejs(['jquery', 'Falkone_MagentoShariff/js/shariff'], function ($, my_shariff) {
+        // initialize .shariff elements
+        $('.shariff').each(function() {
+            if (!this.hasOwnProperty('shariff')) {
+                //this.shariff = new Shariff(this);
+                $(this).addClass("testing");
+            }
+        });
+
+        my_shariff.log("tester");
+    });
+</script>

@@ -2,11 +2,11 @@
     <head>
         <css src="Falkone_MagentoShariff::css/shariff.css"/>
         <css src="Falkone_MagentoShariff::fonts/awesome/font-awesome.css"/>
-        <link src="Falkone_MagentoShariff::js/shariff.js"/>
+<!--        <link src="Falkone_MagentoShariff::js/shariff.js"/> -->
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="shariff-page" template="Falkone_MagentoShariff::shariffpage.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="shariff-demopage" template="Falkone_MagentoShariff::shariffdemopage.phtml"/>
         </referenceContainer>
     </body>
 </page>

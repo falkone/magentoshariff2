@@ -7,6 +7,7 @@
     <body>
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="shariff-demopage" template="Falkone_MagentoShariff::shariffdemopage.phtml"/>
+            <block class="Falkone\MagentoShariff\Block\Shariff" name="magento-shariff" template="shariffdemoblock.phtml"/>
         </referenceContainer>
     </body>
 </page>
